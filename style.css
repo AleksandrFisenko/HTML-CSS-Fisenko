@@ -88,7 +88,7 @@ body {
 
 /* секция 3 */
 
-.table-container {
+.item-container {
   display: flex;
   align-items: flex-start;
   padding: 5% 0 0 5%;
@@ -139,4 +139,85 @@ table.table-3 td,  table.table-3 tr {
   border: 1px solid #000;
   font-size: 2.5vw;
   background-color: #fff;
+}
+
+/* секция 4 */
+
+.section3 {
+  margin: 5%;
+  background-color: #F1E9E9;
+  padding-bottom: 2%;
+}
+
+.section3__item {
+  display: flex;
+  align-items: flex-start;
+  padding: 5% 0 0 5%;
+}
+
+.section3__text1 {
+  width: 45%;
+  font-size: 3vw;
+  background-color: #fff;
+  border: 1px solid #beafaf;
+  padding: 2vh;
+  white-space: normal;
+}
+
+.section3__text-container2 {
+  background-color: #fff;
+  width: 70%;
+  padding: 4vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section3__text2 {
+  width: 80%;
+  font-size: 5vw;
+  background-color: #fff;
+  border: 1px solid #beafaf;
+  padding: 0.5vh;
+  white-space: nowrap;
+}
+
+.section3__text-container3 {
+  background-color: #fff;
+  width: 60%;
+  padding: 4vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section3__text3 {
+  width: 80%;
+  font-size: 3vw;
+  background-color: #fff;
+  border: 1px solid #beafaf;
+  padding: 0.5vh;
+  white-space: pre;
+}
+
+.section3__text4 {
+  width: 50%;
+  font-size: 3.5vw;
+  background-color: #fff;
+  border: 1px solid #beafaf;
+  padding: 0.5vh;
+  white-space: pre-wrap;
+}
+
+/* секция 5 */
+
+.section5 {
+  margin: 5%;
+  background-color: #F1E9E9;
+  padding-bottom: 2%;
+}
+
+.section5__container {
+  background-color: #a09f9f;
+  padding: 2vh;
 }
