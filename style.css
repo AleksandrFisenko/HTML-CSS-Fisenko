@@ -1,4 +1,4 @@
-/* секция 1 */
+/* section 1 */
 body {
   background-color: #fff;
 }
@@ -62,7 +62,7 @@ body {
   display: inline-block;
 }
 
-/* секция 2 */
+/* section 2 */
 
 .form-elements {
   background-color: #fff;
@@ -86,7 +86,7 @@ body {
   width: fit-content;
 }
 
-/* секция 3 */
+/* section 3 */
 
 .item-container {
   display: flex;
@@ -141,7 +141,7 @@ table.table-3 td,  table.table-3 tr {
   background-color: #fff;
 }
 
-/* секция 4 */
+/* section 4 */
 
 .section3 {
   margin: 5%;
@@ -209,15 +209,63 @@ table.table-3 td,  table.table-3 tr {
   white-space: pre-wrap;
 }
 
-/* секция 5 */
+/* section 5 */
 
 .section5 {
   margin: 5%;
   background-color: #F1E9E9;
-  padding-bottom: 2%;
 }
 
-.section5__container {
+.section5__items-container {
   background-color: #a09f9f;
-  padding: 2vh;
+  padding: 3vh 10vh 3vh 3vh;
+
+  p, div, span, h3, button, section {
+    background-color: #a52948;
+    height: 50px;
+    margin: 10px 0;
+  }
+  span {
+    display: inline-block;
+    width: 150px;
+  }
+  input {
+    display: inline-block;
+  }
+  button {
+    text-align: center;
+    width: 200px;
+    display: block;
+  }
+  section {
+    width: 150px;
+    display: inline-block;
+  }
+}
+
+/* section 6 */
+
+.section6 {
+  margin: 5%;
+  background-color: #F1E9E9;
+  div {
+    background-color: #AAA9B7;
+    p {
+      color: #1332e2;
+      font-size: 5vh;
+    }
+    h2 {
+      color: #09da13;
+    }
+  }
+  #test {
+    p {
+      color: #13d4e2;
+      font-size: 7vh;
+    }
+    h2 {
+      color: #2c6880;
+      font-size: 2vh;
+    }
+  }
 }
