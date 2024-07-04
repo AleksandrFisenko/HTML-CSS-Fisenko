@@ -100,7 +100,8 @@ table.table-1 {
   border-collapse: collapse;
 }
 
-table.table-1 td,  table.table-1 tr {
+table.table-1 td,
+table.table-1 tr {
   border: 1px solid #000;
   font-size: 2.5vw;
   background-color: #fff;
@@ -122,7 +123,8 @@ table.table-2 {
   border-collapse: collapse;
 }
 
-table.table-2 td,  table.table-2 tr {
+table.table-2 td,
+table.table-2 tr {
   border: 1px solid #000;
   font-size: 2.5vw;
   background-color: #fff;
@@ -134,7 +136,8 @@ table.table-3 {
   border-collapse: collapse;
 }
 
-table.table-3 td,  table.table-3 tr {
+table.table-3 td,
+table.table-3 tr {
   text-align: center;
   border: 1px solid #000;
   font-size: 2.5vw;
@@ -220,23 +223,32 @@ table.table-3 td,  table.table-3 tr {
   background-color: #a09f9f;
   padding: 3vh 10vh 3vh 3vh;
 
-  p, div, span, h3, button, section {
+  p,
+  div,
+  span,
+  h3,
+  button,
+  section {
     background-color: #a52948;
     height: 50px;
     margin: 10px 0;
   }
+
   span {
     display: inline-block;
     width: 150px;
   }
+
   input {
     display: inline-block;
   }
+
   button {
     text-align: center;
     width: 200px;
     display: block;
   }
+
   section {
     width: 150px;
     display: inline-block;
@@ -248,24 +260,149 @@ table.table-3 td,  table.table-3 tr {
 .section6 {
   margin: 5%;
   background-color: #F1E9E9;
-  div {
-    background-color: #AAA9B7;
-    p {
-      color: #1332e2;
-      font-size: 5vh;
+
+  .list-number {
+    display: inline-block;
+    width: 5.5vw;
+    height: 5.5vw;
+    border-radius: 50%;
+    background-color: #1d10d3;
+    color: #fff;
+    text-align: center;
+    line-height: 5.5vw;
+    margin-right: 10px;
+  }
+
+  .section6__part1 {
+    border: 2px solid black;
+    div {
+      p {
+        color: blue;
+        font-size: 18px;
+      }
+
+      h2 {
+        color: green;
+        font-family: Arial, sans-serif;
+      }
     }
-    h2 {
-      color: #09da13;
+
+    #test {
+      p {
+        color: red;
+        font-style: italic;
+      }
+
+      h2 {
+        color: purple;
+        text-decoration: underline;
+      }
+
+      .bbb {
+        border: 2px solid black;
+      }
+
+      p.bbb {
+        font-size: 40px;
+      }
+
+      p.bbb,
+      p.xxx {
+        text-align: center;
+      }
+    }
+
+    .bbb {
+      background-color: lightgray;
+      padding: 10px;
+    }
+
+    p.bbb {
+      border: 2px solid pink;
+    }
+
+    h2.bbb#test {
+      font-weight: bold;
+    }
+
+    .bbb,
+    .xxx {
+      background-color: aqua;
+    }
+
+    p.bbb,
+    h2.xxx {
+      font-style: italic;
+    }
+
+    .fff {
+      background-color: pink;
+
+      p {
+        color: darkgreen;
+      }
+
+      .bbb {
+        padding: 55px;
+      }
+    }
+
+    p.fff {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    h2.bbb {
+      border-bottom: 10px solid paleturquoise;
+    }
+
+    span {
+      color: orange;
+    }
+
+    [data-value='45'] {
+      background-color: brown;
+    }
+
+    .parent>.child {
+      font-size: 100px;
+      color: cyan;
+    }
+
+    .text.active {
+      font-weight: bold;
+      color: darkred;
+    }
+
+    #my-list {
+      li:nth-child(2) {
+        color: magenta;
+      }
+
+      li:first-child {
+        color: aqua;
+      }
     }
   }
-  #test {
-    p {
-      color: #13d4e2;
-      font-size: 7vh;
+
+  .section6__part2 {
+    border: 2px solid black;
+    .section6__img {
+      width: 10vw;
     }
-    h2 {
-      color: #2c6880;
-      font-size: 2vh;
+
+    h1 + p {
+      color: red;
+      font-weight: 900;
+      font-size: 50px;
+    }
+    div ~ p {
+      color: aqua;
+      font-style: italic;
+      font-size: 30px;
+      margin-left: 10px;
+    }
+    :not(img) {
+      border: 1px solid pink;
     }
   }
 }
