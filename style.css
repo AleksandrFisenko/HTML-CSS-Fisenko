@@ -40,14 +40,15 @@ body {
 }
 
 .list-number {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 5.5vw;
   height: 5.5vw;
   border-radius: 50%;
   background-color: #AAA9B7;
   color: #fff;
-  text-align: center;
-  line-height: 5.5vw;
+  font-size: 2.5vw;
   margin-right: 10px;
 }
 
@@ -607,23 +608,23 @@ table.table-3 tr {
       padding: 5% 0 0 5%;
 
       .section9__task {
+        width: 85%;
+        height: auto;
         display: flex;
+        flex-direction: row;
         background-color: #990099;
         height: max-content;
       }
 
-
-
       .section9__task1 {
-        width: 85%;
-        height: auto;
-        flex-direction: row;
         flex-wrap: wrap;
+
         .section9__item {
           background-color: #F37B20;
           height: 3vh;
           margin: 3vh;
         }
+
         .section9__item1 {
           width: 8%;
         }
@@ -652,114 +653,179 @@ table.table-3 tr {
           width: 8%;
         }
       }
+
       .section9__task2 {
-        width: 85%;
-        height: auto;
         padding: 1vh 0 1vh 0;
-        flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+
         .section9__item {
           background-color: #F37B20;
           height: 3vh;
           margin-right: 1vh;
         }
+
         .section9__item1 {
           width: 16%;
         }
+
         .section9__item2 {
           width: 8%;
         }
+
         .section9__item3 {
           width: 24%;
         }
       }
+
       .section9__task3 {
-        width: 85%;
-        height: auto;
         padding: 1vh 0 1vh 0;
-        flex-direction: row;
         justify-content: flex-end;
         align-items: center;
+
         .section9__item {
           background-color: #F37B20;
           height: 3vh;
           margin-left: 1vh;
         }
+
         .section9__item1 {
           width: 16%;
         }
+
         .section9__item2 {
           width: 8%;
         }
+
         .section9__item3 {
           width: 24%;
         }
       }
+
       .section9__task4 {
-        width: 85%;
-        height: auto;
         padding: 1vh 0 1vh 0;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
+
         .section9__item {
           background-color: #F37B20;
           height: 3vh;
           margin-left: 1vh;
         }
+
         .section9__item1 {
           width: 16%;
         }
+
         .section9__item2 {
           width: 8%;
         }
+
         .section9__item3 {
           width: 24%;
         }
       }
+
       .section9__task5 {
-        width: 85%;
-        height: auto;
         padding: 1vh 0 1vh 0;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
         .section9__item {
           background-color: #F37B20;
           height: 3vh;
         }
+
         .section9__item1 {
           width: 16%;
         }
+
         .section9__item2 {
           width: 8%;
         }
+
         .section9__item3 {
           width: 24%;
         }
       }
+
       .section9__task6 {
-        width: 85%;
-        height: auto;
         padding: 1vh 0 1vh 0;
-        flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
         .section9__item {
           background-color: #F37B20;
           height: 3vh;
         }
+
         .section9__item1 {
           width: 16%;
         }
+
         .section9__item2 {
           width: 8%;
         }
+
         .section9__item3 {
           width: 24%;
         }
       }
     }
+
+    .section9__part2 {
+      width: 100%;
+      align-items: flex-start; /* исправление align-items */
+      display: flex;
+      flex-direction: row;
+    
+      .section9_list-item2 {
+        display: flex;
+        align-items: flex-start; /* исправление align-items */
+        padding: 5% 0 0 5%;
+        flex: 1; /* добавлено flex: 1 */
+    
+        .section9__task {
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          background-color: #990099;
+          height: max-content;
+          flex: 1; /* добавлено flex: 1 */
+        }
+    
+        .section9__task7,
+        .section9__task8,
+        .section9__task9,
+        .section9__task10 {
+          width: 30%;
+          height: auto;
+          padding: 1vh 0 1vh 0;
+          display: flex; /* добавлено display: flex */
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          flex: 1; /* добавлено flex: 1 */
+    
+          .section9__item {
+            background-color: #F37B20;
+            height: 3vh;
+          }
+    
+          .section9__item1 {
+            width: 16%;
+          }
+    
+          .section9__item2 {
+            width: 8%;
+          }
+    
+          .section9__item3 {
+            width: 24%;
+          }
+        }
+      }
+    }
+    
   }
 }
