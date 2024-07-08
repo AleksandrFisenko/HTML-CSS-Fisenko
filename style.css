@@ -774,25 +774,27 @@ table.table-3 tr {
       .section9__task11 {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
         height: 20vh;
+        /* align-items: baseline; */
 
         .section9__item {
           background-color: #FF8C00;
           width: 23%;
           position: relative;
+          margin: 0;
+          display: flex;
 
           p {
-            width: 100%;
             text-align: center;
-            font-weight: 600;                        
+            width: 100%;
+            font-weight: 600;
+            margin: 0;
           }
         }
 
         .section9__item:nth-child(1) {
-          height: 40%;
+          height: 50%;
           margin-top: 2%;
-          top: 10%;
         }
 
         .section9__item:nth-child(2) {
@@ -806,7 +808,7 @@ table.table-3 tr {
         }
 
         .section9__item:nth-child(4) {
-          height: 30%;
+          height: 40%;
           margin-top: 3%;
         }
       }
@@ -982,6 +984,7 @@ table.table-3 tr {
       display: flex;
       margin: 2% 1% 0 1%;
       justify-content: space-between;
+
       .footer__title {
         width: 22%;
         padding: 2% 0 2% 0;
@@ -990,33 +993,41 @@ table.table-3 tr {
         color: #000;
       }
     }
+
     .center {
       display: flex;
       height: 40vh;
+
       .center__main {
         width: 70%;
         background-color: #FEFDE1;
+
         .center__title {
           color: #000;
           font-size: 3vh;
           font-weight: 600;
         }
       }
+
       .center__side {
         width: 40%;
         background-color: #D4F8C9;
+
         .center__title {
           color: #12c51b;
         }
       }
     }
+
     .items-container {
       .items-container__columns {
         margin: 0 5% 0 5%;
         display: flex;
         justify-content: space-around;
+
         .items-container__row {
           justify-content: center;
+
           .items-container__item {
             display: flex;
             justify-content: center;
@@ -1026,14 +1037,122 @@ table.table-3 tr {
             font-size: 2vh;
             font-weight: 500;
           }
+
           .items-container__item_once {
             width: 42vw;
           }
+
           .items-container__item_more {
             width: 20vw;
           }
         }
       }
     }
+  }
+}
+
+/* section 11 */
+.section11 {
+  margin: 5%;
+  background-color: #F1E9E9;
+  padding-bottom: 2%;
+
+  .section11__parent:nth-child(2) {
+    background-color: #AAA9B7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50vw;
+    margin: 0 5% 0 5%;
+
+    .section11__child {
+      width: 50%;
+      height: 50%;
+      background-color: #B76269;
+    }
+  }
+
+  .section11__parent:nth-child(3) {
+    background-color: #AAA9B7;
+    width: 90%;
+    height: 50vw;
+    margin: 5% 5% 0 5%;
+    position: relative;
+
+    .section11__child {
+      background-color: #B76269;
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top: 25%;
+      left: 25%;
+    }
+  }
+}
+
+/* section 12 */
+.section12 {
+  margin: 5%;
+  background-color: #F1E9E9;
+  padding-bottom: 2%;
+
+  .section12__container {
+    margin: 0 5% 0 5%;
+    height: 40vh;
+    background-color: #fff;
+    background-image:
+      url(/img/section12/background.png),
+      url(/img/section12/background.png);
+    background-size: 30%, 30%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -5vh left -5vh, top -5vh right -5vh;
+  }
+}
+
+/* section 13 */
+.section13 {
+  margin: 5%;
+  background-color: #F1E9E9;
+  padding-bottom: 2%;
+
+  .section13__parent {
+    margin: 0 5% 0 5%;
+    background-color: #fff;
+
+    .section13__child {
+      height: 40vh;
+      background-color: #B76269;
+    }
+
+    .section13__child:nth-child(1) {
+      /* 
+      // внутренние отступы
+      padding: 15px; - 15px со всех сторон
+      padding: 15px 24px; - сверху и снизу 15px, слева и справа 24px
+      padding: 15px 0 24px; сверху 15px, слева и справа 0, снизу 24px
+      padding: 1px 2px 3px 4px; - внутренние отступы 1px 2px 3px 4px(сверху, справа, снизу, слева)
+
+      // внешние отступы
+      margin: 4px; - со всех сторон 4px
+      margin: 0 auto; - сверху и снизу 0, центрирование по левому и правому краю
+      margin: 15px 0 24px; - сверху 15px, слева и справа 0, снизу 24px
+      margin: 1px 2px 3px 4px; - 1px 2px 3px 4px(сверху, справа, снизу, слева)
+      */
+    }
+  }
+}
+/* section 14 */
+.section14 {
+  margin: 5%;
+  background-color: #F1E9E9;
+  padding-bottom: 2%;
+  .section14__container {
+    margin: 0 5% 0 5%;
+    height: 60vh;
+    background-color: #B0C4DE;
+  }
+  .section14__container:nth-child(3) {
+    margin-top: 5%;
   }
 }
