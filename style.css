@@ -1061,6 +1061,13 @@ table.table-3 tr {
   background-color: #F1E9E9;
   padding-bottom: 2%;
 
+  .section11__name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5vw;
+    padding: 2%;
+  }
+
   .section11__parent:nth-child(2) {
     background-color: #AAA9B7;
     display: flex;
@@ -1101,6 +1108,13 @@ table.table-3 tr {
   background-color: #F1E9E9;
   padding-bottom: 2%;
 
+  .section12__name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5vw;
+    padding: 2%;
+  }
+
   .section12__container {
     margin: 0 5% 0 5%;
     height: 40vh;
@@ -1119,6 +1133,13 @@ table.table-3 tr {
   margin: 5%;
   background-color: #F1E9E9;
   padding-bottom: 2%;
+
+  .section13__name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5vw;
+    padding: 2%;
+  }
 
   .section13__parent {
     margin: 0 5% 0 5%;
@@ -1152,6 +1173,13 @@ table.table-3 tr {
   margin: 5%;
   background-color: #F1E9E9;
   padding-bottom: 2%;
+
+  .section14__name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5vw;
+    padding: 2%;
+  }
 
   .section14__container {
     margin: 0 5% 0 5%;
@@ -1257,6 +1285,13 @@ table.table-3 tr {
   background-color: #F1E9E9;
   padding-bottom: 2%;
 
+  .section15__name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5vw;
+    padding: 2%;
+  }
+
   /* 
   align-items - выравнивание элементов вертикально
   align-content - выравнивание всего содержимого сетки вертикально
@@ -1276,9 +1311,6 @@ table.table-3 tr {
     background-color: #FFAEC5;
     padding: 5% 2% 6% 2%;
     grid-row-gap: 2vh;
-    /* 1 случай - оцентровать по горизонтали и вертикали все элементы внутри своих ячеек; */
-    justify-items: center;
-    align-items: center;
     grid-template-rows: repeat(3, 1fr);
 
     .task1__row {
@@ -1295,19 +1327,33 @@ table.table-3 tr {
         aspect-ratio: 1 / 1;
         font-size: 2vw;
       }
-
-      /* 3 случай - оцентровать по горизонтали и вертикали внутри своей ячейки только один элемент child_5; */
-      /* .task1__item_child5 {
-        justify-self: center;
-        align-self: center;
-      } */
     }
+  }
+
+  .task1:nth-child(2) {
+    /* 1 случай - оцентровать по горизонтали и вертикали все элементы внутри своих ячеек; */
+    justify-items: center;
+    align-items: center;
+  }
+
+  .task1:nth-child(3) {
 
     /* 2 случай - оцентровать по горизонтали и вертикали всю grid-сетку внутри её родителя; */
-    /* .task1__row:nth-child(2) {
-        justify-content: center;
-        align-content: center;
-      } */
+    .task1__row {
+      justify-content: center;
+      align-content: center;
+    }
+  }
+
+  .task1:nth-child(4) {
+    .task1__row {
+
+      /* 3 случай - оцентровать по горизонтали и вертикали внутри своей ячейки только один элемент child_5; */
+      .task1__item_child5 {
+        justify-self: center;
+        align-self: center;
+      }
+    }
   }
 
   /* 
@@ -1325,19 +1371,11 @@ table.table-3 tr {
   place-self - не окажет эффекта
   */
   .task2 {
-    height: 50vh;
-    margin-top: 10%;
+    height: 30vh;
     background-color: #FFAEC5;
     display: flex;
     flex-direction: column;
     position: relative;
-    /* 2 случай - передвинуть все элементы в правый нижний угол. */
-    /* align-items: flex-end;
-    justify-content: flex-end; */
-
-    /* 1 случай - оцентровать линии (row) контейнера по вертикали и горизонтали. */
-    align-items: center;
-    justify-content: center;
 
     .task2__row {
       display: flex;
@@ -1353,13 +1391,28 @@ table.table-3 tr {
         font-size: 2vw;
         margin: 2% 2% 5% 1%;
       }
+    }
+  }
 
+  .task2:nth-child(5) {
+    margin-top: 10%;
+    /* 1 случай - оцентровать линии (row) контейнера по вертикали и горизонтали. */
+    align-items: center;
+    justify-content: center;
+  }
+  .task2:nth-child(6) {
+    /* 2 случай - передвинуть все элементы в правый нижний угол. */
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .task2:nth-child(7) {
+    .task2__row {
       /* 3 случай - передвинуть только элемент child_9 в правый нижний угол; */
-      /* .task2__item_child9 {
+      .task2__item_child9 {
         position: absolute;
         bottom: 0;
         right: 0;
-      } */
+      }
     }
   }
 }
