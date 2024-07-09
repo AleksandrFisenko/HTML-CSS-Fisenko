@@ -39,12 +39,19 @@
       <div class="list-item">
         <div class="list-number">3</div>
         <div class="shop-list-3">
-          <div class="list-tetxt">
+          <dl>
+            <dt>HTML</dt>
+            <dd>Язык гипертекстовой разметки.</dd>
+            <dt>CSS</dt>
+            <dd>Язык каскадных таблиц стилей.</dd>
+          </dl>
+          <!-- <div class="list-tetxt">
             <p>HTML</p>
             <p>Язык гипертекстовой разметки, служит для<br> создания HTML страниц</p>
             <p>CSS</p>
             <p>Каскадные таблицы стилей, служат для<br> стилизации элементов HTML страницы</p>
-          </div>
+          </div> -->
+
         </div>
       </div>
     </div>
@@ -429,39 +436,39 @@
   </section>
   <!-- section 10 -->
   <section class="section10">
-    <p class="section-name">Section #10</p>
-    <div class="task">
-      <header class="head">
-        <p class="head__title title">[Шапка страницы]</p>
+    <p class="section10__name">Section #10</p>
+    <div class="section10__task task">
+      <header class="task__head head">
+        <p class="head__title">[Шапка страницы]</p>
       </header>
-      <main class="center">
-        <div class="center__main">
-          <p class="center__title title">[Основная часть]</p>
-          <div class="items-container">
-            <div class="items-container__columns">
-              <div class="items-container__row">
-                <p class="items-container__item items-container__item_more">[Ещё 1]</p>
+      <main class="task__center center">
+        <div class="center__main main">
+          <p class="center__title">[Основная часть]</p>
+          <div class="main__items items">
+            <div class="items__columns">
+              <div class="items__row">
+                <p class="items__item items__item_more">[Ещё 1]</p>
               </div>
-              <div class="items-container__row">
-                <p class="items-container__item items-container__item_more">[Ещё 2]</p>
+              <div class="items__row">
+                <p class="items__item items__item_more">[Ещё 2]</p>
               </div>
             </div>
-            <div class="items-container__columns">
-              <div class="items-container__row">
-                <p class="items-container__item items-container__item_once">[Ещё 3]</p>
+            <div class="items__columns">
+              <div class="items__row">
+                <p class="items__item items__item_once">[Ещё 3]</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="center__side">
-          <p class="center__title title">[Боковая область]</p>
+        <div class="center__side side">
+          <p class="center__title">[Боковая область]</p>
         </div>
       </main>
-      <footer class="footer">
-        <p class="footer__title title">[Секция футера 1]</p>
-        <p class="footer__title title">[Секция футера 2]</p>
-        <p class="footer__title title">[Секция футера 3]</p>
-        <p class="footer__title title">[Секция футера 4]</p>
+      <footer class="task__footer footer">
+        <p class="footer__title">[Секция футера 1]</p>
+        <p class="footer__title">[Секция футера 2]</p>
+        <p class="footer__title">[Секция футера 3]</p>
+        <p class="footer__title">[Секция футера 4]</p>
       </footer>
     </div>
   </section>
@@ -482,7 +489,7 @@
   </section>
   <!-- section 13 -->
   <section class="section13">
-    <p class="section-name">Section #12</p>
+    <p class="section-name">Section #13</p>
     <div class="section13__parent">
       <div class="section13__child">text</div>
     </div>
@@ -490,11 +497,59 @@
   <!-- section 14 -->
   <section class="section14">
     <p class="section-name">Section #14</p>
-    <div class="section14__container">
-
+    <div class="container">
+      <header class="container__header element">HEADER</header>
+      <nav class="container__nav element">NAV</nav>
+      <main class="container__main element">MAIN</main>
+      <aside class="container__aside element">ASIDE</aside>
+      <section class="container__section element">SECTION</section>
+      <footer class="container__footer element">FOOTER</footer>
     </div>
-    <div class="section14__container">
-      
+    <div class="container">
+      <header class="container__header element">HEADER</header>
+      <nav class="container__nav element">NAV</nav>
+      <main class="container__main element">MAIN</main>
+      <aside class="container__aside element">ASIDE</aside>
+      <section class="container__section element">SECTION</section>
+      <footer class="container__footer element">FOOTER</footer>
+    </div>
+  </section>
+  <!-- section 15 -->
+  <section class="section15">
+    <p class="section-name">Section #15</p>
+    <div class="task1">
+      <div class="task1__row">
+        <div class="task1__item">child_1</div>
+        <div class="task1__item">child_2</div>
+        <div class="task1__item">child_3</div>
+      </div>
+      <div class="task1__row">
+        <div class="task1__item">child_4</div>
+        <div class="task1__item task1__item_child5">child_5</div>
+        <div class="task1__item">child_6</div>
+      </div>
+      <div class="task1__row">
+        <div class="task1__item">child_7</div>
+        <div class="task1__item">child_8</div>
+        <div class="task1__item">child_9</div>
+      </div>
+    </div>
+    <div class="task2">
+      <div class="task2__row">
+        <div class="task2__item">child_1</div>
+        <div class="task2__item">child_2</div>
+        <div class="task2__item">child_3</div>
+      </div>
+      <div class="task2__row">
+        <div class="task2__item">child_4</div>
+        <div class="task2__item">child_5</div>
+        <div class="task2__item">child_6</div>
+      </div>
+      <div class="task2__row">
+        <div class="task2__item">child_7</div>
+        <div class="task2__item">child_8</div>
+        <div class="task2__item task2__item_child9">child_9</div>
+      </div>
     </div>
   </section>
 </body>
