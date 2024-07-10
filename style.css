@@ -1371,7 +1371,6 @@ table.table-3 tr {
   place-self - не окажет эффекта
   */
   .task2 {
-    height: 30vh;
     background-color: #FFAEC5;
     display: flex;
     flex-direction: column;
@@ -1404,6 +1403,7 @@ table.table-3 tr {
     /* 2 случай - передвинуть все элементы в правый нижний угол. */
     align-items: flex-end;
     justify-content: flex-end;
+    height: 60vw;
   }
   .task2:nth-child(7) {
     .task2__row {
